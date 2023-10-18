@@ -7,23 +7,15 @@
  */
 void puts2(char *str)
 {
-	int  longi = 0;
-	int  a = 0;
-	char *y = str;
-	int o;
+	int z;
 
-	while (*y != '\0')
+	while (str[z] != '\0')
 	{
-		y++;
-		longi++;
-	}
-	a = longi - 1;
-	for (o = 0 ; o <= a ; o++)
-	{
-		if (o % 2 == 0)
+		if (z % 2 == 0)
 		{
-			_putchar(str[0]);
+			_putchar(str[z]);
 		}
+		z++;
 	}
 	_putchar('\n');
 }
