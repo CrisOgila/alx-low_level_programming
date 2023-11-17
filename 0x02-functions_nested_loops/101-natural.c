@@ -1,24 +1,18 @@
 #include <stdio.h>
 /**
- * main - Prints first 50 fibonacci numbers, starting with 1 and 2
- * Return: Always 0
+ * main - function to sum multiples of 3 or 5
+ * Return: 0
  */
 int main(void)
 {
-int count;
-unsigned long fib1 = 0, fib2 = 1, sum;
+int sum = 0;
+int i;
 
-for (count = 0; count < 50, count++)
+for (i = 0 ; i < 1024 ; i++)
 {
-sum = fib1 + fib2;
-printf("%lu", sum);
-fib1 = fib2;
-fib2 = sum;
-if (count == 49)
-printf("\n");
-else
-printf(",");
+if (i % 3 == 0 || i % 5 == 0)
+sum = sum + 1;
 }
+printf("%d\n", sum);
 return (0);
 }
-
