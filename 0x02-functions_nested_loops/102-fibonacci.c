@@ -5,20 +5,21 @@
  */
 int main(void)
 {
-int count;
-unsigned long fib1 = 0, fib2 = 1, sum;
+unsigned long int fib1 = 1
+unsigned long int fib2 = 2;
+unsigned long int next;
+int i;
 
-for (count = 0; count < 50, count++)
+printf("%lu, ", fib1);
+for (i = 1 ; i < 50 ; i++)
 {
-sum = fib1 + fib2;
-printf("%lu", sum);
+printf("%lu", fib2);
+next = fib1 + fib2
 fib1 = fib2;
-fib2 = sum;
-if (count == 49)
-printf("\n");
-else
-printf(",");
+fib2 = next;
+if (i != 49)
+printf(", ");
 }
+printf("\n");
 return (0);
 }
-
