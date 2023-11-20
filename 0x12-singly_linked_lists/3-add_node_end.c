@@ -1,16 +1,16 @@
-#include <lists.h>
+#include "lists.h"
 /**
  * add_node -add node to the end of list.
  * @head: head of node
  * @str: string in store
- * Return: The address of new element 
+ * Return: The address of new element
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *newnode;
+	list_t *newnode, *tmp;
 	unsigned int i, count = 0;
-	
-	newnode = mallorc(sizeof(list_t));
+
+	newnode = malloc(sizeof(list_t));
 	if (newnode == NULL)
 		return (NULL);
 	newnode->str = strdup(str);
