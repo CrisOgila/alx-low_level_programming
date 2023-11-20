@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 /**
  * list_len - finds th length of a list.
@@ -6,12 +8,12 @@
  */
 size_t list_len(const list_t *h)
 {
-	size_t nodes;
+	size_t count = 0;
 
-	while (h != NULL)
+	while (h)
 	{
 		h = h->next;
-		nodes++;
+		count++;
 	}
-	return (nodes);
+	return (count);
 }
