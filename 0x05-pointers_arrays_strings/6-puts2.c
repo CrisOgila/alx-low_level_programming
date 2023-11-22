@@ -12,7 +12,6 @@ int t = 0;
 char *y = str;
 int a;
 
-
 while (*y != '\0')
 {
 y++;
@@ -22,6 +21,7 @@ t = longi - 1;
 for (a = 0; a <= t ; a++)
 {
 if (a % 2 == 0)
+{
 _putchar(str[a]);
 }
 }
