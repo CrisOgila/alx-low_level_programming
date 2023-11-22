@@ -1,6 +1,6 @@
-#include <"main.h">
+#include "main.h"
 /**
- * print_square - function that prints an integer
+ * print_number - function that prints an integer
  * @n: integer to be printed
  */
 void print_number(int n)
