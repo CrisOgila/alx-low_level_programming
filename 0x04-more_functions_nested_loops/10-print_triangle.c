@@ -1,4 +1,4 @@
-#include <"main.h">
+#include "main.h"
 /**
  * print_square - function that prints a triangle using the character #
  * @size: size of triangle
